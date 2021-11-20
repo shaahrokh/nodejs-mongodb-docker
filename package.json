@@ -13,7 +13,7 @@
   "keywords": [
     "nodejs-app"
   ],
-  "author": "Shahrokh Moghimi",
+  "author": "Shahrokh Moghimi<shahrokh.moghimi@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shaahrokh/nodejs-mongodb-docker/issues"
