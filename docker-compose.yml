@@ -1,0 +1,30 @@
+version: '3.9'
+
+
+services:
+  # nodejs application services (api)
+  api:
+    build: .
+    ports:
+      - "4000:3000"
+    volumes:
+      - "./src:/usr/src/app"  
+    environment:
+      PORT: 3000
+      MONGODB_URI: Mongodb://mongo_db:27017
+      DB_NAME: mu_db
+    depends_on:
+      - mongo_db    
+  
+  # MongoDB services
+  mongo_db:
+    image: mongo:latest
+    container_name: db_container
+    restart: always
+    ports:
+      - "2717:27017"
+    volumes:
+      - "./mongo_db:/data/db"
+
+volumes:
+  mongo_db: {}      
