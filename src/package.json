@@ -4,11 +4,16 @@
   "description": "Node js Application",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shaahrokh/nodejs-mongodb-docker.git"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   },
   "keywords": [
     "nodejs-app"
